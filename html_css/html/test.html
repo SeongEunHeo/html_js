@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="pop_notice">
+		<div class="contents">
+			<img usemap="#planetmap2" src="http://www.lgnsys.com/img/kor/main/service_popup_170704.jpg" border="0">
+			<map name="planetmap2"> 
+        	<area shape="rect" coords="217,328,283,363" href="javascript:fnLayerClose();" alt="닫기">
+			<area shape="rect" coords="6,381,171,406" href="javascript:todayclose('notiPopup');" alt="오늘 더 이상 보지 않기">
+			<area shape="rect" coords="440,385,491,406" href="javascript:fnLayerClose();" alt="닫기">            
+        </map>
+		</div>
+	</div>
+	<div id="contents">
+		<!--header-->
+		<div id="header" class="csspie">
+			<div class="headerWrap">
+				<div class="topBar">
+					<div class="logo">
+						<a href="http://www.lgnsys.com">
+							<img src="http://www.lgnsys.com/img/kor/icon/logo.png" alt="로고">
+						</a>
+					</div>
+					<div class="topLocation">
+						<ul>
+							<li class="top_bar1">
+								<a href=""></a>
+							</li>
+							<li class="top_bar2">
+								<a href=""></a>
+							</li>
+							<li class="top_bar3">
+								<a href=""></a>
+							</li>
+							<li class="top_bar4">
+								<a href=""></a>
+							</li>
+							<li class="top_bar5">
+								<a href=""></a>
+							</li>
+							<li class="top_bar6">
+								<a href=""></a>
+							</li>
+						</ul>
+						<div class="btn-recruit">
+							<a href="" target="_blank" title="새창"></a>
+						</div>
+						<div class="searchArea">
+							<form name="frm" action="javascript:search()">
+								<label for="n_contt" class="hide">전체검색</label>
+								<input type="text" name="search_text" id="n_contt" class="csspie" value>
+								<button type="button" class="csspie" id="sendBtn" onclick="search()">
+									<span class="hide">검색</span>
+								</button>
+								<input type="hidden" name="key" value="all">
+								<input type="hidden" name="choose" value="1">
+							</form>
+						</div>		
+					</div>
+				</div>
+				<!--//topBar-->
+				<div class="gnbWrap">
+					<div class="gnb">
+						<ul>
+							<li id="gNav01">
+								<span><a href="">기업소개</a></span>
+								<ul>
+									<li class="snb1_1">
+										<a href="">기업소개</a>
+									</li>
+									<li class="snb1_2">
+										<a href="">브랜드</a>
+									</li>
+									<li class="snb1_3">
+										<a href="">정도경영</a>
+									</li>
+									<li class="snb1_1">
+										<a href="">오시는길</a>
+									</li>
+								</ul>
+							</li>
+							<li id="gNav02">
+								<span><a href="">기업문화</a></span>
+								<ul>
+									<li class="snb2_1">
+										<a href="">메뉴1</a>
+									</li>
+									<li class="snb2_2">
+										<a href="">메뉴2</a>
+									</li>
+									<li class="snb2_3">
+										<a href="">메뉴3</a>
+									</li>
+									<li class="snb2_1">
+										<a href="">메뉴4</a>
+									</li>
+								</ul>
+							</li>
+							<li id="gNav03">
+								<span><a href="">기업소개</a></span>
+								<ul>
+									<li class="snb3_1">
+										<a href="">기업소개</a>
+									</li>
+									<li class="snb3_2">
+										<a href="">브랜드</a>
+									</li>
+									<li class="snb3_3">
+										<a href="">정도경영</a>
+									</li>
+									<li class="snb3_1">
+										<a href="">오시는길</a>
+									</li>
+								</ul>
+							</li>
+							<li id="gNav04">
+								<span><a href="">기업문화</a></span>
+								<ul>
+									<li class="snb4_1">
+										<a href="">메뉴1</a>
+									</li>
+									<li class="snb4_2">
+										<a href="">메뉴2</a>
+									</li>
+									<li class="snb4_3">
+										<a href="">메뉴3</a>
+									</li>
+									<li class="snb4_1">
+										<a href="">메뉴4</a>
+									</li>
+								</ul>
+							</li>
+							<li id="gNav05">
+								<span><a href="">기업소개</a></span>
+								<ul>
+									<li class="snb5_1">
+										<a href="">기업소개</a>
+									</li>
+									<li class="snb5_2">
+										<a href="">브랜드</a>
+									</li>
+									<li class="snb5_3">
+										<a href="">정도경영</a>
+									</li>
+									<li class="snb5_1">
+										<a href="">오시는길</a>
+									</li>
+								</ul>
+							</li>
+							<li id="gNav06">
+								<span><a href="">기업문화</a></span>
+								<ul>
+									<li class="snb6_1">
+										<a href="">메뉴1</a>
+									</li>
+									<li class="snb6_2">
+										<a href="">메뉴2</a>
+									</li>
+									<li class="snb6_3">
+										<a href="">메뉴3</a>
+									</li>
+									<li class="snb6_1">
+										<a href="">메뉴4</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="gnbBg"></div>
+		</div>
+		<!--//header-->
+		<!--mainVisual-->
+		<div id="mainVisual">
+			<div class="slideWrap">
+				<div class="slide slick-intialized slick-slider slick-dotted"></div>
+				<div class="bgwhite bg-left"></div>
+				<div class="bgwhite bg-right"></div>
+			</div>
+		</div>
+		<!--//mainVisual-->
+		<!--maincontentBox-->
+		<div id="mainContentBox">
+			<div class="mainContent_new">
+				<ul class="mbox line1">
+					<li class="fst">
+						<h2><img src="http://www.lgnsys.com/img/kor/main/tit_m1.gif"></h2>
+						<ul class="mbox_con">
+							<li>
+								<a href="">
+								<span class="title">하하하하하하호호호호호호호히히히ㅣ</span>
+								<span class="date">2017-07-31</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+								<span class="title">하하하하하하호호호호호호호히히히ㅣ</span>
+								<span class="date">2017-07-31</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+								<span class="title">하하하하하하호호호호호호호히히히ㅣ</span>
+								<span class="date">2017-07-31</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+								<span class="title">하하하하하하호호호호호호호히히히ㅣ</span>
+								<span class="date">2017-07-31</span>
+								</a>
+							</li>
+						</ul>
+						<span class="btn_more">
+							<a href=""></a>
+						</span>
+					</li>
+					<li>
+						<h2>
+							<img src="http://www.lgnsys.com/img/kor/main/tit_m2.gif">
+						</h2>
+						<ul class="mbox_con">
+							<li>
+								<a href="">
+								<span class="title">하하하하하하호호호호호호호히히히ㅣ</span>
+								<span class="date">2017-07-31</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+								<span class="title">하하하하하하호호호호호호호히히히ㅣ</span>
+								<span class="date">2017-07-31</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+								<span class="title">하하하하하하호호호호호호호히히히ㅣ</span>
+								<span class="date">2017-07-31</span>
+								</a>
+							</li>
+							<li>
+								<a href="">
+								<span class="title">하하하하하하호호호호호호호히히히ㅣ</span>
+								<span class="date">2017-07-31</span>
+								</a>
+							</li>
+						</ul>
+						<span class="btn_more">
+							<a href=""></a>
+						</span>
+					</li>
+				</ul>
+				<ul class="mbox mgb44">
+					<li class="fst">
+						<a href="" title="기업소개">
+							<img src="http://www.lgnsys.com/img/kor/main/img_company.jpg" alt="이미지">
+						</a>
+					</li>
+					<li>
+						<a href="" title="만화로 보는">
+							<img src="http://www.lgnsys.com/img/kor/main/img_company.jpg">
+						</a>
+					</li>
+					<li>
+					<h2 class="hide">
+						<img src="http://www.lgnsys.com/img/kor/main/tit_m5.gif" alt="채용공고"></h2>
+						<a href="" title="채용공고 페이지 이동" target="_blank">
+						<img src="http://www.lgnsys.com/img/kor/main/img_career.jpg" alt="꿈과 열정"></a>
+					</li>
+				</ul>
+			</div>
+			<div class="quick" style="top:20px">
+			<img src="" alt="채용정보" onclick="" style="cursor: pointer">
+			</div>
+		</div>
+		<!--//maincontentBox-->
+	</div>
+	<!--footer-->
+	<div id="footer">
+		<div class="foot">
+			<h2 class="access">메뉴바로가기</h2>
+			<div class="f-sitemap">
+				<div>
+					<h3 class="m1">
+						<a href="">
+							<span>기업소개</span>
+						</a>
+					</h3>
+					<ul>
+						<li class="m1-1">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m1-2">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m1-3">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m1-4">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m1-5">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m1-6">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m1-7">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m1-8">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m1-9">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m1-10">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="m2">
+						<a href="">
+							<span>기업소개</span>
+						</a>
+					</h3>
+					<ul>
+						<li class="m2-1">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m2-2">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m2-3">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m2-4">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m2-5">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m2-6">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m2-7">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="m3">
+						<a href="">
+							<span>기업소개</span>
+						</a>
+					</h3>
+					<ul>
+						<li class="m3-1">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m3-2">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m3-3">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m3-4">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="m4">
+						<a href="">
+							<span>기업소개</span>
+						</a>
+					</h3>
+					<ul>
+						<li class="m4-1">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m4-2">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m4-3">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m4-4">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m4-5">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m4-6">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m4-7">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m4-8">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m4-9">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3 class="m5">
+						<a href="">
+							<span>기업소개</span>
+						</a>
+					</h3>
+					<ul>
+						<li class="m5-1">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m5-2">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m5-3">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m5-4">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m5-5">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m5-6">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+						<li class="m5-7">
+							<a href=""></a>
+							<span>개요</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="f-policy">
+				<h2 class="access">LG엔시스 정책 및 약관</h2>
+				<select id="footer_compant" name="site" style="height: 20px">
+					<option value>faliy site</option>
+					<option value="1">계열사1</option>
+					<option value="2">계열사2</option>
+					<option value="3">계열사3</option>
+				</select>
+			</div>
+			<address class="f-address">
+				서울시 마포구 마포대로 155 LG마포빌딩 (02)3773-1114 / COPYRIGHT ⓒ 2017 LG-N Sys Inc. All Rights Reserved.
+			</address>
+			::after
+		</div>
+	</div>
+	<!--//footer-->
+	
+</body>
+</html>

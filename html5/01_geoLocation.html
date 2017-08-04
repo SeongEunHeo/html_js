@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#map{
+			width: 500px;
+			height: 500px;
+			border: 1px solid #333;
+		}
+	</style>
+</head>
+<body>
+<div id="location"></div>
+<div id="map"></div>
+<script type="text/javascript" src="maps.google.com/map/api/js"></script>
+<script type="text/javascript">
+	window.onload = getMyLocation
+
+	function getMyLocation(){
+		if(navigator.geolocation){
+			navigator.geolocation.getCurrentPosition(displayLocation)
+		}else{
+			alert('no geolocation support')
+		}
+	}
+	function displayLocation(position){
+		var lat =position.coords.latitude
+		var lng =position.coords.longitude
+
+		var div = document.getElementById('location')
+		div.innerHTML ="lat:"+lat+" lag:"+lng
+		showMap(position.coords)
+	}
+
+	var map
+	function showMap(coords){
+		var mapCiv = document.getElementById('map')
+		var gooleLatLng = new google.maps.LatLng(
+			coords.latitude, coords.location)
+		var mapOptions ={
+			zoom:10,
+			center:googleLatLng,
+			mapTypeId:google.maps.mapTypeId.ROADMAP
+		}
+		google.map.Map(mapDiv,mapOptions)
+	}
+</script>
+</body>
+</html>
